@@ -34,3 +34,15 @@ Replace `YOUR_MIGRATION_DATA` with the data from your Google Authenticator QR co
 4. Select the accounts you want to export
 5. Scan the generated QR code with a QR code reader app
 6. Copy the URL from the QR code (starts with `otpauth-migration://offline?data=`)
+
+# Import in KeyPass
+
+1. edit a keypass entry
+2. go to advnaced tab
+3. create a new string field neamed 'TimeOtp-Secret-Hex'
+4. copy the secret's hex value from html table output (comuln 'secret')
+5. check 'Protect value in process memory' option
+
+# Display TOTP code in KeyPass
+1. right-click KeyPass entry,
+2. Go to 'Other Data' -> 'Copy Time-Based OTP'
