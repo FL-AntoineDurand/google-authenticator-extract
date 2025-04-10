@@ -1,0 +1,28 @@
+{
+    "name": "google-authenticator-decoder",
+    "version": "1.0.0",
+    "description": "Decode Google Authenticator migration QR code data",
+    "main": "decode-authenticator.js",
+    "scripts": {
+        "start": "node decode-authenticator.js",
+        "generate-html": "node generate-html.js"
+    },
+    "keywords": [
+        "google-authenticator",
+        "2fa",
+        "otp",
+        "migration",
+        "qr-code"
+    ],
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+        "hi-base32": "^0.5.1",
+        "protobufjs": "^7.2.5",
+        "qrcode": "^1.5.3"
+    },
+    "bin": {
+        "decode-authenticator": "./decode-authenticator.js",
+        "generate-otp-html": "./generate-html.js"
+    }
+}
